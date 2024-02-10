@@ -1,0 +1,43 @@
+.wrapper {
+	padding: 16px 0;
+	background: transparent;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	transition: all 0.3s ease;
+}
+
+.opaque {
+	background: #ffffff;
+}
+
+.inner {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	width: 100%;
+	position: relative;
+	z-index: 1;
+}
+
+.logo {
+	object-fit: contain;
+	display: none;
+}
+
+.burger {
+	display: block;
+	position: static;
+}
+
+@media only screen and (max-width: 768px) {
+	.inner {
+		justify-content: space-between;
+	}
+
+	.logo {
+		display: block;
+	}
+}

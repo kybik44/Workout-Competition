@@ -1,0 +1,38 @@
+.wrapper {
+	padding: 55px 0 75px;
+}
+
+.title {
+	font-style: normal;
+	font-weight: 200;
+	font-size: 70px;
+	line-height: 72px;
+	color: #090700;
+}
+
+.table {
+	margin: 42px 0 0;
+}
+
+.pagination {
+	margin: 56px 0 0;
+}
+
+@media only screen and (max-width: 768px) {
+	.wrapper {
+		padding: 64px 0;
+	}
+
+	.title {
+		font-size: 54px;
+		line-height: 110%;
+	}
+
+	.table {
+		margin: 32px 0 0;
+	}
+
+	.pagination {
+		margin: 64px 0 0;
+	}
+}

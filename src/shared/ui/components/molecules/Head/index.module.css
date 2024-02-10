@@ -1,0 +1,73 @@
+.wrapper-run {
+	padding: 70px 0 65px;
+	background: url('/images/common/bg_run.png') top center/cover no-repeat;
+	position: relative;
+}
+
+.wrapper {
+	padding: 70px 0 20px;
+	background: url('/images/common/bg_run_woman.png') top center/cover
+		no-repeat;
+	position: relative;
+}
+
+.wrapper-football {
+	padding: 70px 0 20px;
+	background: url('/images/common/bg_football.png') top center/cover no-repeat;
+	position: relative;
+}
+
+.wrapper-bike {
+	padding: 70px 0 20px;
+	background: url('/images/common/bg_bike.png') top center/cover no-repeat;
+	position: relative;
+}
+
+.inner {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: column;
+	width: 100%;
+	position: relative;
+	z-index: 1;
+}
+
+.logo {
+	margin-bottom: 115px;
+	z-index: 0;
+}
+
+.small {
+	margin-bottom: 12px;
+}
+
+@media only screen and (max-width: 768px) {
+	.wrapper-run {
+		padding: 120px 0 400px;
+		background: url('/images/common/bg_run_mob.png') top center/cover
+			no-repeat;
+	}
+
+	.wrapper {
+		background: url('/images/common/bg_run_woman_mob.png') top center/cover
+			no-repeat;
+		padding: 160px 0 63px;
+	}
+
+	.wrapper-football {
+		background: url('/images/common/bg_football_mob.png') top center/cover
+			no-repeat;
+		padding: 160px 0 63px;
+	}
+
+	.wrapper-bike {
+		background: url('/images/common/bg_bike_mob.png') top center/cover
+			no-repeat;
+		padding: 160px 0 63px;
+	}
+
+	.logo {
+		display: none;
+	}
+}

@@ -1,0 +1,65 @@
+.wrapper {
+	padding: 56px 0 64px;
+	background: url('/images/profile/achievements-bg.png') top center/cover
+		no-repeat;
+}
+
+.title {
+	font-style: normal;
+	font-weight: 200;
+	font-size: 70px;
+	line-height: 72px;
+	color: #090700;
+}
+
+.title span {
+	font-style: normal;
+	font-weight: 200;
+	font-size: 55px;
+	line-height: 60px;
+	color: #090700;
+}
+
+.achievements {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 165px);
+	column-gap: 8px;
+	row-gap: 16px;
+	justify-content: center;
+	align-items: center;
+	margin: 42px 0 0;
+}
+
+.achievement {
+	object-fit: contain;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+	.wrapper {
+		padding: 64px 0;
+	}
+
+	.title {
+		font-size: 54px;
+		line-height: 110%;
+	}
+
+	.title span {
+		font-size: 42px;
+		line-height: 110%;
+	}
+
+	.achievements {
+		margin: 32px 0 0;
+		grid-template-columns: repeat(auto-fill, 116px);
+		column-gap: 10px;
+		row-gap: 10px;
+	}
+
+	.achievement {
+		width: 116px;
+		height: 116px;
+	}
+}

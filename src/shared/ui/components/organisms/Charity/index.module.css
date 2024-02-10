@@ -1,0 +1,297 @@
+.wrapper {
+	padding: 64px 0 0;
+}
+
+.head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.title {
+	font-style: normal;
+	font-weight: 100;
+	font-size: 70px;
+	line-height: 72px;
+	color: #000000;
+}
+
+.hide-btn {
+	border: none;
+	background-color: transparent;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	color: #000000;
+	display: flex;
+	align-items: center;
+}
+
+.hide-btn svg {
+	margin: 0 0 0 15px;
+	transition: all 0.3s ease;
+}
+
+.hide-btn path {
+	stroke: #000000;
+}
+
+.description-wrapper {
+	margin: 48px 0 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.description-image {
+	flex: 0 0 478px;
+	object-fit: contain;
+}
+
+.description {
+	margin: 0 0 0 32px;
+}
+
+.description-title {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 120%;
+}
+
+.description-text {
+	margin: 12px 0 0;
+}
+
+.description-text p,
+.description-text li {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.description-text strong {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.description-text p:not(:last-child) {
+	margin: 0 0 1em;
+}
+
+.description-text li:not(:last-child) {
+	margin: 0 0 0.5em;
+}
+
+.description-text ul,
+.description-text ol {
+	list-style-position: inside;
+}
+
+.charity-count {
+	display: flex;
+	justify-content: space-between;
+	margin: 35px 0 0;
+	width: 100%;
+}
+
+.count-description {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.count-title {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 120%;
+}
+
+.count {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 100%;
+	color: #ffffff;
+	width: 478px;
+	min-height: 145px;
+	height: 100%;
+	background: linear-gradient(
+		94.26deg,
+		#11e9e8 -0.01%,
+		#a343e2 58.77%,
+		#ed36c4 101.98%
+	);
+	margin: 8px 0 0;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.charity-form {
+	background: #f5f5f5;
+	width: 100%;
+	padding: 24px 32px;
+	margin: 0 0 0 32px;
+}
+
+.form-inner {
+	display: flex;
+	flex-direction: column;
+	max-width: 535px;
+	width: 100%;
+}
+
+.field-wrapper {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+}
+
+.field-text {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 24px;
+	color: #000000;
+}
+
+.input-container {
+	margin: 0 0 0 16px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-flow: row nowrap;
+}
+
+.input-container input {
+	border: 1px solid #dcdcdc;
+	height: 56px;
+	width: 194px;
+	outline: none;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 26px;
+	padding: 0 16px;
+	text-align: center;
+	margin: 0 16px 0 0;
+}
+
+.input-container input::-webkit-outer-spin-button,
+.input-container input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.input-container input[type='number'] {
+	-moz-appearance: textfield;
+}
+
+.error {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	top: 100%;
+}
+
+.send-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #ed36c4;
+	border: none;
+	width: 260px;
+	height: 56px;
+	color: #ffffff;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	margin: 24px 0 0;
+	align-self: flex-end;
+}
+
+.server-error {
+	text-align: end;
+}
+
+@media only screen and (max-width: 820px) {
+	.head {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.title {
+		font-size: 48px;
+		line-height: 110%;
+	}
+
+	.hide-btn {
+		align-self: flex-end;
+		margin: 32px 0 0;
+	}
+
+	.description-wrapper {
+		flex-direction: column;
+		margin: 24px 0 0;
+	}
+
+	.description-image {
+		width: 100%;
+		height: 220px;
+	}
+
+	.description {
+		margin: 12px 0 0;
+	}
+
+	.charity-count {
+		flex-direction: column;
+		align-items: flex-start;
+		width: 100%;
+	}
+
+	.count-description {
+		width: 100%;
+	}
+
+	.count {
+		width: 100%;
+		height: 118px;
+	}
+
+	.charity-form {
+		margin: 55px 0 0;
+		padding: 0;
+		background-color: #ffffff;
+	}
+
+	.form-inner {
+		max-width: 100%;
+	}
+
+	.input-container {
+		margin: 16px 0 0;
+	}
+
+	.field-wrapper {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.send-btn {
+		width: 100%;
+	}
+
+	.server-error {
+		text-align: start;
+	}
+}

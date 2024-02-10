@@ -1,0 +1,39 @@
+.login-content {
+	padding: 50px 0 0 108px;
+	margin: 0 auto;
+	width: fit-content;
+	position: relative;
+	min-height: 100vh;
+	/* 108px * 100% / 1440px in Figma design */
+	transform: translateX(7.5vw);
+}
+.login-content::after {
+	content: '';
+	width: 100vw;
+	background-color: var(--head-color);
+	height: 100%;
+	display: block;
+	position: absolute;
+	left: -100vw;
+	top: 0;
+	bottom: 0;
+}
+.login-content h3 {
+	margin: 40px 0 24px 0;
+}
+.login-content form {
+	margin: 64px 0 0 0;
+}
+
+.bg-top {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.bg-bottom {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}

@@ -1,0 +1,52 @@
+.wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: auto;
+}
+
+.table {
+	width: 100%;
+	overflow: auto;
+}
+
+.row {
+	display: grid;
+	grid-template-columns: 55px minmax(330px, 1fr) 228px 228px 150px 150px;
+}
+
+.deletable-row {
+	grid-template-columns: 55px minmax(330px, 1fr) 228px 228px 150px 150px 50px;
+}
+
+.head {
+	background: #e3cdef;
+	padding: 21px 12px;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+	color: var(--black);
+	border: 1px solid #dcdcdc;
+	text-align: start;
+}
+
+.column {
+	padding: 14px 12px;
+	border: 1px solid #dcdcdc;
+	background: var(--white);
+}
+
+.remove {
+	background: transparent;
+	border: none;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.remove:hover path {
+	fill: var(--black);
+}

@@ -1,0 +1,44 @@
+.modal {
+	padding: 0 !important;
+	margin: 1em 0 !important;
+	background: var(--white);
+	max-width: 1210px !important;
+	width: 100% !important;
+	outline: none !important;
+}
+
+.close {
+	position: absolute;
+	top: 24px;
+	right: 24px;
+	background: transparent;
+	width: 24px;
+	height: 24px;
+	border: none;
+	z-index: 2;
+}
+
+.close:hover path {
+	stroke: var(--black);
+}
+
+.image-wrapper {
+	width: 100%;
+	padding-top: 95.85%;
+	position: relative;
+}
+
+.image-wrapper > img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+@media (max-width: 768px) {
+	.modal {
+		width: 95% !important;
+	}
+}

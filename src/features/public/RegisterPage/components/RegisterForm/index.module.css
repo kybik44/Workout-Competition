@@ -1,0 +1,228 @@
+.wrapper {
+	background: #ffffff;
+	padding: 64px;
+	width: 100%;
+	max-width: 912px;
+	margin: 80px 0 140px;
+	position: relative;
+	z-index: 1;
+}
+
+.routes {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 0 48px;
+}
+
+.route-link {
+	color: #dcdcdc;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 48px;
+}
+
+.route-link:first-child {
+	color: #ed36c4;
+}
+
+.field-label {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 24px;
+	color: var(--black);
+}
+
+.fields {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-areas:
+		'first-name birthday'
+		'last-name team'
+		'middle-name gender'
+		'city participation'
+		'phone avatar'
+		'email avatar'
+		'password avatar';
+	column-gap: 32px;
+	row-gap: 38px;
+}
+
+.error-message {
+	position: absolute;
+	top: calc(100% + 3px);
+}
+
+.first-name {
+	grid-area: first-name;
+}
+
+.last-name {
+	grid-area: last-name;
+}
+
+.middle-name {
+	grid-area: middle-name;
+}
+
+.birthday {
+	grid-area: birthday;
+	display: grid;
+	grid-template-columns: 1fr;
+	row-gap: 6px;
+	position: relative;
+}
+
+.birthday-fields {
+	width: 100%;
+	display: grid;
+	align-items: center;
+	grid-template-columns: minmax(50px, 104px) minmax(50px, 104px) minmax(
+			100px,
+			136px
+		);
+	column-gap: 16px;
+}
+
+.team {
+	grid-area: team;
+}
+
+.city {
+	grid-area: city;
+}
+
+.gender {
+	grid-area: gender;
+	display: grid;
+	grid-template-columns: 1fr;
+	row-gap: 6px;
+	position: relative;
+}
+
+.gender-fields {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.participation {
+	grid-area: participation;
+	max-width: 60%;
+	display: grid;
+	grid-template-columns: 1fr;
+	row-gap: 6px;
+	position: relative;
+}
+
+.participation-fields {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.phone {
+	grid-area: phone;
+}
+
+.email {
+	grid-area: email;
+}
+
+.password {
+	grid-area: password;
+}
+
+.avatar {
+	grid-area: avatar;
+	width: fit-content;
+	width: 314px;
+}
+
+.policy {
+	width: 100%;
+	margin: 48px 0 0;
+}
+
+.policy-text {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	color: var(--black);
+}
+
+.policy-text a {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 24px;
+	color: #ed36c4;
+	text-decoration: underline;
+}
+
+.submit-button {
+	border: none;
+	background: #ed36c4;
+	color: var(--white);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	padding: 16px 0;
+	width: 376px;
+	margin: 48px 0 0;
+}
+
+.submit-button:hover {
+	background: #dc16b0;
+}
+
+@media only screen and (max-width: 768px) {
+	.wrapper {
+		padding: 54px 24px;
+		margin-bottom: 135px;
+	}
+
+	.route-link {
+		font-size: 30px;
+		line-height: 120%;
+	}
+
+	.fields {
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			'first-name'
+			'last-name'
+			'middle-name'
+			'birthday'
+			'team'
+			'city'
+			'gender'
+			'participation'
+			'phone'
+			'email'
+			'password'
+			'avatar';
+	}
+
+	.birthday-fields {
+		column-gap: 8px;
+	}
+
+	.submit-button {
+		width: 100%;
+	}
+
+	.participation {
+		max-width: 85%;
+	}
+
+	.avatar {
+		width: 100%;
+	}
+}

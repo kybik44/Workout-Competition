@@ -1,0 +1,31 @@
+.wrapper {
+	padding-bottom: 130px;
+	position: relative;
+}
+
+.inner {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: column;
+	width: 100%;
+	position: relative;
+	z-index: 1;
+}
+
+.activities {
+	display: grid;
+	row-gap: 80px;
+}
+
+@media only screen and (max-width: 768px) {
+	.wrapper {
+		padding-bottom: 78px;
+	}
+
+	.activities {
+		display: grid;
+		grid-template-columns: 1fr;
+		row-gap: 80px;
+	}
+}

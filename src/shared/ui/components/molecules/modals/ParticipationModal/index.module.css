@@ -1,0 +1,207 @@
+.modal {
+	margin: 0 !important;
+	padding: 56px 64px !important;
+	width: 100% !important;
+	max-width: 536px !important;
+	background-position: center !important;
+	background-size: cover !important;
+}
+
+.modal-error {
+	margin: 0 !important;
+	padding: 56px 64px !important;
+	width: 100% !important;
+	max-width: 536px !important;
+	max-height: 368px !important;
+	background-position: center !important;
+	background-size: cover !important;
+}
+
+.close-icon {
+	fill: var(--disabled-color);
+}
+
+.close-btn {
+	width: 24px !important;
+	height: 24px !important;
+	top: 28px !important;
+	right: 28px !important;
+}
+
+.text {
+	max-width: 380px;
+	height: 100%;
+}
+
+.text h2 {
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 120%;
+	color: #ed36c4;
+	margin-bottom: 12px;
+}
+
+.text h3 {
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 120%;
+	color: #090700;
+	margin-bottom: 32px;
+}
+
+.text p {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	color: #090700;
+	margin-bottom: 32px;
+}
+
+.error {
+	height: 100%;
+	max-width: 406px;
+}
+
+.error h2 {
+	font-size: 48px;
+	line-height: 42px;
+}
+
+.error h3 {
+	font-size: 36px;
+	line-height: 42px;
+	margin-bottom: 42px;
+}
+
+.error p {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 32px;
+}
+
+.modal-wrap {
+	display: flex;
+	justify-content: center;
+}
+
+.check {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 120%;
+	color: #090700;
+	max-width: 417px;
+}
+
+.subtitle {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	color: #090700;
+	margin: 32px 0 0;
+}
+
+.button-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 32px 0 0;
+}
+
+.buttonCheck {
+	padding: 16px 10px;
+	color: #fff;
+	background-color: #ed36c4;
+	border: 1px solid #ed36c4;
+	width: 100%;
+	max-width: 202px;
+	margin-right: 12px;
+}
+
+.transparent-button {
+	background-color: transparent;
+	color: #000;
+	margin-right: 0;
+}
+
+.succes-button {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	padding: 16px 10px;
+	color: #fff;
+	border: none;
+	background-color: #ed36c4;
+	width: 100%;
+	max-width: 202px;
+}
+@media screen and (max-width: 990px) {
+	.modal {
+		padding: 48px 32px !important;
+		max-width: 368px !important;
+		width: 95% !important;
+	}
+	.modal-error {
+		padding: 48px 32px !important;
+		max-width: 368px !important;
+		max-height: 380px !important;
+		margin: 0 20px !important;
+	}
+	.modal-wrap {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.text h2 {
+		font-size: 36px;
+		line-height: 32px;
+	}
+
+	.text h3 {
+		font-size: 24px;
+		line-height: 32px;
+		margin-bottom: 24px;
+	}
+	.text p {
+		font-weight: normal;
+		font-size: 20px;
+		line-height: 24px;
+	}
+	.modal-wrap img {
+		max-width: 253px;
+		max-height: 247px;
+		padding-top: 34px;
+		object-fit: contain;
+	}
+	.image-wrap {
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+	}
+	.modal-wrap-error {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.button-container {
+		flex-direction: column;
+	}
+
+	.buttonCheck {
+		max-width: 100%;
+		margin-right: 0;
+		margin-bottom: 12px;
+	}
+
+	.transparent-button {
+		margin-bottom: 0;
+	}
+}

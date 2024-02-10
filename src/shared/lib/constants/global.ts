@@ -1,0 +1,11 @@
+export const TOKEN_KEY = process.env.NEXT_PUBLIC_TOKEN_NAME;
+export const API_URL = process.env.NEXT_PUBLIC_BASE_API_URL;
+export const COOKIE_CONSENT_KEY = process.env.NEXT_PUBLIC_COOKIE_CONSENT_NAME;
+export const CMS_API_URL = process.env.NEXT_PUBLIC_CMS_API_URL;
+export const STRAVA_CLIENT_ID = process.env.NEXT_PUBLIC_STRAVA_CLIENT_ID;
+export const STRAVA_REDIRECT_URL = process.env.NEXT_PUBLIC_STRAVA_REDIRECT_URL;
+export const STRAVA_ACCESS_URL = `http://www.strava.com/oauth/authorize?client_id=${STRAVA_CLIENT_ID}&response_type=code&redirect_uri=${STRAVA_REDIRECT_URL}&approval_prompt=force&scope=activity:read_all`;
+export const SHOP_VISIBILITY = process.env.NEXT_PUBLIC_SHOP_VISIBILITY;
+export const BASKET_NAME = process.env.NEXT_PUBLIC_BASKET_NAME;
+export const SHOP_ACTIVE = process.env.NEXT_PUBLIC_SHOP_ACTIVE;
+export const ACTIVITIES_ENABLED = process.env.NEXT_PUBLIC_ACTIVITIES;

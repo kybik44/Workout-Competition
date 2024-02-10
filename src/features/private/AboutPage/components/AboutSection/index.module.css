@@ -1,0 +1,82 @@
+.wrapper {
+	padding-bottom: 115px;
+}
+
+.title {
+	color: #ed36c4;
+	margin-bottom: 12px;
+}
+
+.text {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	white-space: pre-wrap;
+	max-width: 700px;
+	margin-bottom: 72px;
+}
+
+.newseason-description {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 120%;
+	color: #000;
+	margin-bottom: 72px;
+}
+
+.newseason-title {
+	font-style: normal;
+	font-size: 24px;
+	line-height: 120%;
+	font-weight: 700;
+}
+
+.term {
+	max-width: 580px;
+}
+
+.term-title {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 48px;
+	color: #090700;
+	margin-bottom: 12px;
+}
+
+.term-text {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	color: #090700;
+}
+
+@media only screen and (max-width: 768px) {
+	.wrapper {
+		padding-bottom: 65px;
+	}
+
+	.title {
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 120%;
+	}
+
+	.text {
+		margin-bottom: 48px;
+	}
+
+	.newseason-description {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 120%;
+		margin-bottom: 48px;
+	}
+
+	.term-title {
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 120%;
+	}
+}

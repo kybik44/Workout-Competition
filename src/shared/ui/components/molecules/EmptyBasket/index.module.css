@@ -1,0 +1,22 @@
+.message {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 120%;
+	color: #000000;
+}
+
+.to-shop {
+	display: flex;
+	align-items: center;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	color: #000000;
+	margin: 56px 0 0;
+}
+
+.to-shop path {
+	fill: #000000;
+}

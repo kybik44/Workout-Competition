@@ -1,0 +1,63 @@
+{
+	"name": "workoutnow",
+	"version": "1.0.0",
+	"description": "WorkoutNow",
+	"main": "index.js",
+	"repository": "git@github.com:kybik44/WorkoutNow.git",
+	"author": "Alexey Budilovich <kybikfeed@gmail.com>",
+	"license": "MIT",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"schema:generate": "openapi-typescript https://dev.pre.f7a.io/swagger.json --output src/rest-api.schema.ts"
+	},
+	"dependencies": {
+		"@hookform/resolvers": "2.6.1",
+		"@prismicio/client": "5.1.0",
+		"add": "2.0.6",
+		"axios": "0.21.1",
+		"downshift": "6.1.7",
+		"file-saver": "^2.0.5",
+		"graphql": "15.5.0",
+		"graphql-request": "3.4.0",
+		"gridjs": "5.0.2",
+		"gridjs-react": "5.0.2",
+		"js-cookie": "2.2.1",
+		"markdown-to-jsx": "^7.1.7",
+		"next": "11.0.1",
+		"next-cookie": "^2.8.0",
+		"purgecss-webpack-plugin": "^4.1.3",
+		"react": "17.0.2",
+		"react-css-collapse": "^4.1.0",
+		"react-dom": "17.0.2",
+		"react-dropdown-select": "4.8.3",
+		"react-hook-form": "7.11.0",
+		"react-markdown": "5.0.3",
+		"react-paginate": "7.1.0",
+		"react-responsive-modal": "^6.2.0",
+		"yup": "0.32.9"
+	},
+	"devDependencies": {
+		"@types/node": "14.14.19",
+		"@types/react": "17.0.0",
+		"eslint": "7.17.0",
+		"eslint-config-airbnb": "18.2.1",
+		"eslint-config-next": "11.0.1",
+		"eslint-config-prettier": "7.1.0",
+		"eslint-plugin-import": "2.22.1",
+		"eslint-plugin-jsx-a11y": "6.4.1",
+		"eslint-plugin-prettier": "3.3.0",
+		"eslint-plugin-react": "7.22.0",
+		"eslint-plugin-react-hooks": "4.2.0",
+		"msw": "0.28.2",
+		"openapi-typescript": "3.0.1",
+		"prettier": "2.2.1",
+		"typescript": "4.3.5",
+		"typescript-plugin-css-modules": "3.0.1"
+	},
+	"msw": {
+		"workerDirectory": "public"
+	}
+}

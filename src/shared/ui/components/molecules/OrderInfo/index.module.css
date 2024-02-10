@@ -1,0 +1,118 @@
+.info-wrapper {
+	display: flex;
+	align-items: flex-start;
+	padding-left: 32px;
+}
+
+.info {
+	margin: 0 0 0 32px;
+}
+
+.info img {
+	object-fit: contain;
+	flex: 0 0 146px;
+}
+
+.params {
+	display: flex;
+	align-items: center;
+	margin: 20px 0 0;
+}
+
+.product-title {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 120%;
+	color: #000000;
+}
+
+.params p {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	color: #000000;
+}
+
+.params span {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 24px;
+	color: #000000;
+}
+
+.params p:not(:last-child) {
+	margin: 0 32px 0 0;
+}
+
+.description {
+	margin: 24px 0 0;
+}
+
+.description p,
+.desccription li {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	color: #000000;
+}
+
+.desccription strong {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 24px;
+	color: #000000;
+}
+
+.desccription ul,
+.desccription ol {
+	list-style-position: inside;
+}
+
+.description p:not(:last-child) {
+	margin: 0 0 1em;
+}
+
+.price-wrapper {
+	align-self: center;
+}
+
+.price {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 24px;
+	color: #000000;
+}
+
+.price-info {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	color: #7a7a7a;
+	margin: 8px 0 0;
+}
+
+.count {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 120%;
+	color: #000000;
+	align-self: center;
+	text-align: start;
+}
+
+.total-price {
+	align-self: center;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 120%;
+	color: #000000;
+}

@@ -1,0 +1,27 @@
+.input {
+	border: 1px solid #dcdcdc;
+	background-color: transparent;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	padding: 4px 0;
+	text-align: center;
+	color: var(--black);
+}
+
+.input::placeholder {
+	color: #dcdcdc;
+}
+
+.input:focus {
+	border-color: #ed36c4;
+}
+
+.input:not(:placeholder-shown) {
+	border-color: #49ac53;
+}
+
+.error {
+	border-color: #e42b2b;
+}

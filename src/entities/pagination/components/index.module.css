@@ -1,0 +1,43 @@
+.wrapper {
+	display: flex;
+}
+
+.container {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	list-style-type: none;
+}
+
+.button {
+	background: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 36px;
+	height: 36px;
+	border: none;
+	background: transparent;
+}
+
+.button path {
+	fill: var(--black);
+}
+
+.link {
+	width: 36px;
+	height: 36px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	color: var(--black);
+}
+
+.active {
+	background: #ed36c4;
+	color: var(--white);
+}

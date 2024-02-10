@@ -1,0 +1,25 @@
+.layout {
+	text-align: right;
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.layout-button {
+	margin-right: 16px;
+	border: none;
+	background-color: transparent;
+}
+
+.active path {
+	fill: #ed36c4;
+}
+
+.disabled path {
+	fill: #c7c7c7;
+}
+
+@media only screen and (max-width: 768px) {
+	.layout {
+		margin-bottom: 32px;
+	}
+}

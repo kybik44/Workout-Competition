@@ -1,0 +1,39 @@
+.wrapper {
+	padding: 26px;
+	position: fixed;
+	bottom: 10vh;
+	right: 10vw;
+	background: #ed36c4;
+	width: 335px;
+	z-index: 9999;
+}
+
+.text {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	color: var(--white);
+}
+
+.accept-button {
+	width: 100%;
+	padding: 10px 0;
+	background: var(--white);
+	border: none;
+	color: var(--black);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	margin: 16px 0 0;
+}
+
+@media only screen and (max-width: 768px) {
+	.wrapper {
+		width: 90%;
+		right: 50%;
+		transform: translateX(50%);
+		bottom: 5%;
+	}
+}

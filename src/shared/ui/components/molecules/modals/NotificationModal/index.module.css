@@ -1,0 +1,88 @@
+.modal {
+	padding: 56px 64px !important;
+	margin: 1em 0 !important;
+	background: var(--white);
+	max-width: 950px !important;
+	width: 100% !important;
+	outline: none !important;
+}
+
+.close {
+	position: absolute;
+	top: 24px;
+	right: 24px;
+	background: transparent;
+	width: 24px;
+	height: 24px;
+	border: none;
+}
+
+.close:hover path {
+	stroke: var(--black);
+}
+
+.title {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 48px;
+	color: #090700;
+}
+
+.text {
+	margin: 16px 0 0;
+}
+
+.text p,
+.text li {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	color: #090700;
+}
+
+.text strong {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.text p:not(:last-child),
+.text li:not(:last-child) {
+	margin: 0 0 1em;
+}
+
+.image {
+	margin: 32px 0 0;
+	position: relative;
+	height: 0;
+	padding-top: 67.67%;
+}
+
+.image img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+@media only screen and (max-width: 768px) {
+	.modal {
+		padding: 32px !important;
+		width: 90% !important;
+	}
+
+	.close {
+		top: 20px;
+		right: 20px;
+	}
+
+	.title {
+		font-size: 30px;
+		line-height: 120%;
+	}
+}

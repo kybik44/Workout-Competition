@@ -1,0 +1,36 @@
+.wrapper {
+	padding-bottom: 145px;
+}
+
+.title {
+	margin-bottom: 16px;
+}
+
+.text {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	white-space: pre-wrap;
+	margin-bottom: 32px;
+	max-width: 462px;
+}
+
+@media only screen and (max-width: 1024px) {
+	.wrapper {
+		overflow: hidden;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.wrapper {
+		padding-bottom: 130px;
+	}
+
+	.title {
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 120%;
+		margin-bottom: 12px;
+	}
+}

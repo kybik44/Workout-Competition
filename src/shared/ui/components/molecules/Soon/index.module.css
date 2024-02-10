@@ -1,0 +1,33 @@
+.wrapper {
+	margin-bottom: 55px;
+}
+
+.title {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 48px;
+	color: #090700;
+	margin-bottom: 12px;
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 50px;
+	row-gap: 12px;
+}
+
+@media only screen and (max-width: 768px) {
+	.title {
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 120%;
+		margin-bottom: 24px;
+	}
+
+	.cards {
+		grid-template-columns: 1fr;
+		row-gap: 24px;
+	}
+}

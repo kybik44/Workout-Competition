@@ -1,0 +1,47 @@
+.workouts {
+	padding: 65px 0 155px;
+	background: #fff;
+	position: relative;
+}
+
+.inner {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: column;
+	width: 100%;
+	position: relative;
+	z-index: 1;
+}
+
+.title {
+	font-style: normal;
+	font-weight: 200;
+	font-size: 70px;
+	line-height: 72px;
+	color: #090700;
+	margin-bottom: 65px;
+}
+
+.schedule {
+	display: grid;
+	grid-row-gap: 20px;
+	align-self: center;
+}
+
+@media only screen and (max-width: 860px) {
+	.workouts {
+		padding: 65px 0 80px;
+	}
+
+	.title {
+		font-style: normal;
+		font-weight: 200;
+		font-size: 54px;
+		line-height: 110%;
+	}
+
+	.schedule {
+		grid-row-gap: 24px;
+	}
+}

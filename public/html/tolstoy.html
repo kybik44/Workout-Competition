@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>тестовый чат</title>
+	<script>
+		function getParameterByName(name, url = window.location.href) {
+			name = name.replace(/[\[\]]/g, '\\$&');
+			var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+				results = regex.exec(url);
+			if (!results) return null;
+			if (!results[2]) return '';
+			return decodeURIComponent(results[2].replace(/\+/g, ' '));
+		};
+	</script>
+</head>
+
+<body style="margin: 0; padding: 0">
+	<script type="text/javascript">
+		const id = getParameterByName("id");
+		!(function (w, d, s, l, x) {
+			w[l] = w[l] || [];
+			w[l].t = w[l].t || new Date().getTime();
+			var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s);
+			j.async = !0;
+			j.src =
+				'//web.tolstoycomments.com/sitejs/app.js?i=' +
+				l +
+				'&x=' +
+				x +
+				'&t=' +
+				w[l].t;
+			f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'tolstoycomments', id);
+	</script>
+
+	<div class="tolstoycomments-feed-name"></div>
+	<script type="text/javascript">
+		const ssoToken = getParameterByName('token');
+
+		window['tolstoycomments'] = window['tolstoycomments'] || [];
+		window['tolstoycomments'].push({
+			action: 'init',
+			values: {
+				visible: true,
+				comment_button_text: 'Открыть чат',
+				sso: ssoToken ? ssoToken : null,
+				desktop_class: 'tolstoycomments-feed-name',
+				hide_all_chats: true,
+				mobile: false,
+				lang: "uk",
+				theme: {
+					colorBackground: '#FBFCFE', //background :)
+					colorAlert: '#4EB7BA', // ???
+					colorMain: '#707070', //text & send button
+					colorMainMiddle: '#004E6D', //date and time of sending, rating border
+					colorMainLight: '#4EB7BA', //message background
+					colorBlackDark: '#000000', //message & menu text
+					colorBlackMiddle: '#4EB7BA', //icons
+					colorBlackLight: 'rgba(0,0,0,0)', //chat borders & input
+					colorBlack: '#707070', //input text color
+					colorMainDark: '#4EB7BA',
+					colorMainMiddleDark: '#5ABE8F' //settings save button,
+				},
+			},
+		});
+	</script>
+</body>
+
+
+</html>

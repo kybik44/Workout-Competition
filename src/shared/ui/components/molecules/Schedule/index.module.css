@@ -1,0 +1,60 @@
+.wrapper {
+	padding: 60px 0 65px;
+	background: url('/images/common/bg_schedule.png') top center/cover no-repeat;
+	position: relative;
+}
+
+.inner {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: column;
+	width: 100%;
+	position: relative;
+	z-index: 1;
+}
+
+.title {
+	font-style: normal;
+	font-weight: 200;
+	font-size: 70px;
+	line-height: 72px;
+	color: #000000;
+	margin-bottom: 40px;
+}
+
+.schedule {
+	display: grid;
+	grid-row-gap: 20px;
+	margin-bottom: 32px;
+	align-self: center;
+}
+
+.link {
+	padding: 16px 10px;
+	background-color: #000000;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 24px;
+	color: #fff;
+	width: 100%;
+	max-width: 380px;
+	text-align: center;
+	align-self: center;
+}
+
+@media only screen and (max-width: 768px) {
+	.wrapper {
+		background: url('/images/common/bg_news_mob.png') top center/cover
+			no-repeat;
+	}
+
+	.title {
+		font-style: normal;
+		font-weight: 200;
+		font-size: 54px;
+		line-height: 110%;
+		margin-bottom: 32px;
+	}
+}

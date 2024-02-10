@@ -1,0 +1,77 @@
+.wrapper {
+	background: var(--white);
+	padding: 64px;
+	margin: 65px 0 315px;
+	width: 504px;
+	position: relative;
+	z-index: 1;
+}
+
+.routes {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 0 48px;
+}
+
+.route-link {
+	color: #dcdcdc;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 48px;
+}
+
+.route-link:first-child {
+	color: #ed36c4;
+}
+
+.fields {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr;
+	row-gap: 38px;
+}
+
+.submit-button {
+	width: 100%;
+	padding: 16px 0;
+	color: var(--white);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	border: none;
+	background: #ed36c4;
+	margin: 48px 0 24px;
+}
+
+.submit-button:hover {
+	background: #dc16b0;
+}
+
+.reset-link {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	color: #ed36c4;
+}
+
+.error {
+	margin: 5px 0 0;
+}
+
+@media only screen and (max-width: 768px) {
+	.wrapper {
+		padding: 54px 24px;
+		width: 100%;
+		margin-bottom: 120px;
+	}
+
+	.route-link {
+		font-size: 30px;
+		line-height: 120%;
+	}
+}

@@ -1,0 +1,60 @@
+.input-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	row-gap: 6px;
+	position: relative;
+}
+
+.label {
+	color: var(--black);
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.input-field-wrap {
+	position: relative;
+}
+
+.input-field-wrap input {
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #dcdcdc;
+	padding: 0 0 8px;
+	color: var(--text-color);
+	background-color: transparent;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.input-field-wrap input[type='password'] {
+	padding: 0 calc(10px + 16px) 8px 0;
+}
+
+.input-field-wrap input::placeholder {
+	color: #dcdcdc;
+}
+
+.input-field-wrap input:not(:placeholder-shown) {
+	border-color: #49ac53;
+}
+
+.input-field-wrap input:focus {
+	border-color: #ed36c4;
+}
+
+.input-field-wrap input:disabled {
+	pointer-events: none;
+}
+
+.input-field-wrap--error input {
+	border-color: #e42b2b;
+}
+
+.error-message {
+	position: absolute;
+	top: calc(100% + 3px);
+}

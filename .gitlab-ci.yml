@@ -1,0 +1,84 @@
+stages:
+    - build
+    - deploy
+
+variables:
+    IMAGE: $CI_REGISTRY/$CI_PROJECT_PATH:$CI_COMMIT_REF_SLUG
+
+build_prod:
+    stage: build
+    only:
+        - prod
+    tags:
+        - build
+    environment:
+        name: prod
+    before_script:
+        - cp $ENV_FILE .env
+        - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
+    script:
+        - docker build -t $IMAGE .
+        - docker push $IMAGE
+    after_script:
+        - docker rmi $IMAGE
+
+deploy_prod:
+    stage: deploy
+    only:
+        - prod
+        - tags
+    except:
+        changes:
+            - 'README.md'
+    tags:
+        - prod
+    environment:
+        name: prod
+    before_script:
+        - cp $ENV_FILE .env
+        - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
+        - docker pull $IMAGE
+    script:
+        - docker-compose -f docker-compose.yml -f docker-compose.server.yml up --force-recreate -d
+    after_script:
+        - docker image prune -a -f
+    when: manual
+
+build_dev:
+    stage: build
+    only:
+        - dev
+    tags:
+        - build
+    environment:
+        name: dev
+    before_script:
+        - cp $ENV_FILE .env
+        - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
+    script:
+        - docker build -t $IMAGE .
+        - docker push $IMAGE
+    after_script:
+        - docker rmi $IMAGE
+
+deploy_dev:
+    stage: deploy
+    only:
+        - dev
+        - tags
+    except:
+        changes:
+            - 'README.md'
+    tags:
+        - dev
+    environment:
+        name: dev
+    before_script:
+        - cp $ENV_FILE .env
+        - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
+        - docker pull $IMAGE
+    script:
+        - docker-compose -f docker-compose.yml -f docker-compose.server.yml up --force-recreate -d
+    after_script:
+        - docker image prune -a -f
+    when: manual

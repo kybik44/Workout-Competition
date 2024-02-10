@@ -1,0 +1,40 @@
+.wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.title {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 120%;
+	color: #090700;
+}
+
+.inputs {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin: 32px 0 0;
+}
+
+.input {
+	width: 72px;
+}
+
+.input-container {
+	margin: 0 0 12px;
+	width: 100%;
+}
+
+.error {
+	color: #e42b2b;
+}
+
+@media only screen and (max-width: 940px) {
+	.title {
+		font-size: 20px;
+		line-height: 24px;
+	}
+}

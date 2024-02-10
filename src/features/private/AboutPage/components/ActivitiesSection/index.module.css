@@ -1,0 +1,65 @@
+.rules {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 32px;
+	margin-bottom: 80px;
+}
+
+.markdown {
+	white-space: pre-wrap;
+	max-width: 578px;
+}
+
+.markdown ol {
+	padding-left: 25px;
+}
+
+.markdown ol li,
+.markdown p,
+.markdown em {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	margin-bottom: 0.75em;
+}
+
+.markdown strong {
+	font-weight: 700;
+}
+
+.markdown h3 {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 100%;
+	margin-bottom: 24px;
+}
+
+.markdown h4 {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 120%;
+	margin-bottom: 16px;
+}
+
+.markdown p a,
+.markdown li a {
+	color: #dc16b0;
+}
+
+@media only screen and (max-width: 768px) {
+	.rules {
+		display: grid;
+		grid-template-columns: 1fr;
+		column-gap: 0;
+		row-gap: 40px;
+		margin-bottom: 37px;
+	}
+
+	.markdown h3 {
+		font-size: 32px;
+		line-height: 120%;
+	}
+}

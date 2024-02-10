@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+input,
+textarea,
+button,
+a {
+	outline: none;
+}
+
+button,
+a {
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* You can use it for the disable autofill backrounds */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	transition: background-color 5000s ease-in-out 0s;
+}
+
+.content {
+	max-width: calc(1210px + 8vw * 2);
+	padding: 0 8vw;
+	margin: 0 auto;
+	width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+	.content {
+		padding: 0 16px;
+	}
+}

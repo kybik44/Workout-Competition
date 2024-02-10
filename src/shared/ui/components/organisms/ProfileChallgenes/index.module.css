@@ -1,0 +1,73 @@
+.wrapper {
+	width: 100%;
+	background: url('/images/profile/challenges-bg.png') top center/cover
+		no-repeat;
+	padding: 55px 0 85px;
+}
+
+.title {
+	font-style: normal;
+	font-weight: 200;
+	font-size: 70px;
+	line-height: 72px;
+	color: #090700;
+}
+
+.challenges {
+	padding: 42px 0 55px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 32px;
+	row-gap: 32px;
+}
+
+.line {
+	height: 1px;
+	width: 100%;
+	background: #7a7a7a;
+}
+
+.workouts-wrapper {
+	padding: 42px 0 0;
+}
+
+.subtitle {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 48px;
+	color: #090700;
+	margin: 0 0 40px;
+}
+
+.workouts {
+	display: grid;
+	grid-template-columns: 1fr;
+	row-gap: 32px;
+}
+
+@media only screen and (max-width: 768px) {
+	.wrapper {
+		padding: 64px 0;
+	}
+
+	.title {
+		font-size: 54px;
+		line-height: 110%;
+	}
+
+	.challenges {
+		padding: 32px 0 40px;
+		grid-template-columns: 1fr;
+		row-gap: 24px;
+	}
+
+	.subtitle {
+		font-size: 30px;
+		line-height: 120%;
+	}
+
+	.workouts-wrapper {
+		padding: 40px 0 0;
+	}
+}

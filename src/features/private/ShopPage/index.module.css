@@ -1,0 +1,9 @@
+.shop-wrapper {
+	padding: 100px 0 80px;
+}
+
+@media (max-width: 820px) {
+	.shop-wrapper {
+		padding: 80px 0 64px;
+	}
+}

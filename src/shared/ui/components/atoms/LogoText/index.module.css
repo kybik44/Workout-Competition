@@ -1,0 +1,62 @@
+.logo-text {
+	font-family: 'Ampero';
+	font-style: normal;
+	font-weight: 300;
+	font-size: calc(110px + 230 * (100vw / 1920));
+	line-height: 100%;
+	letter-spacing: -5px;
+	text-transform: uppercase;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 3px #fff;
+	order: 2;
+	position: relative;
+	z-index: 0;
+	pointer-events: none;
+	user-select: none;
+}
+
+.small-logo {
+	font-size: 215px;
+}
+
+.text {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 35px;
+	line-height: 42px;
+	text-transform: uppercase;
+	color: #1c1c1c;
+	order: 3;
+	margin-top: -35px;
+	pointer-events: none;
+	user-select: none;
+}
+
+@media only screen and (max-width: 1440px) {
+	.text {
+		font-weight: 400;
+		font-size: 32px;
+		line-height: 42px;
+		margin-top: 0;
+	}
+}
+
+@media only screen and (max-width: 1140px) {
+	.logo-text {
+		font-size: calc(100px + 100 * (100vw / 1140));
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.logo-text {
+		order: 1;
+		-webkit-text-stroke: 1px #fff;
+		font-size: calc(57px + 72 * (100vw / 768));
+	}
+
+	.text {
+		order: 2;
+		margin-bottom: 24px;
+		font-size: 24px;
+	}
+}

@@ -1,0 +1,94 @@
+.wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.head {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: flex-start;
+	width: 100%;
+}
+
+.head > img {
+	object-fit: contain;
+	flex: 0 0 78px;
+}
+
+.short-info {
+	margin: 0 0 0 17px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: minmax(65px, 1fr) minmax(86px, 1fr) 24px;
+	column-gap: 17px;
+	row-gap: 16px;
+	align-items: center;
+}
+
+.title {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	color: #000000;
+	grid-column: 1/4;
+}
+
+.count-title {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 24px;
+	color: #ed36c4;
+}
+
+.hide-btn {
+	width: 24px;
+	height: 24px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: transparent;
+	border: none;
+	justify-self: end;
+	grid-column: 3/4;
+}
+
+.hide-btn svg {
+	transform: rotate(270deg);
+	transition: all 0.3s ease;
+}
+
+.open-btn svg {
+	transform: rotate(90deg);
+}
+
+.hide-btn path {
+	fill: #000000;
+}
+
+.description {
+	margin: 16px 0 0;
+}
+
+.description p,
+.description li {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	color: #000000;
+}
+
+.description strong {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 24px;
+	color: #000000;
+}
+
+.description p:not(:last-child) {
+	margin: 0 0 4px;
+}

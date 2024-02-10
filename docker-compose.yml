@@ -1,0 +1,6 @@
+version: "3.5"
+
+services:
+    next_app:
+        env_file: .env
+        restart: on-failure

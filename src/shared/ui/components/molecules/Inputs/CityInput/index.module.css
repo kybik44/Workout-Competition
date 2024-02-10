@@ -1,0 +1,91 @@
+.wrapper {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr;
+	row-gap: 6px;
+	position: relative;
+}
+
+.label {
+	color: var(--black);
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.input-wrapper input {
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #dcdcdc;
+	padding: 0 0 8px;
+	color: var(--text-color);
+	background-color: transparent;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.input-wrapper input::placeholder {
+	color: #dcdcdc;
+}
+
+.input-wrapper input:not(:placeholder-shown) {
+	border-color: #49ac53;
+}
+
+.input-wrapper input:focus {
+	border-color: #ed36c4;
+}
+
+.input-wrapper input:disabled {
+	pointer-events: none;
+}
+
+.input-wrapper-error input {
+	border-color: #e42b2b;
+}
+
+.list {
+	outline: none;
+	list-style-type: none;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	z-index: 10;
+	background-color: var(--white);
+	width: 100%;
+	overflow: auto;
+	border-left: 1px solid #dcdcdc;
+	border-right: 1px solid #dcdcdc;
+	border-bottom: 1px solid #dcdcdc;
+	box-sizing: border-box;
+	filter: drop-shadow(0px 0px 20px #bcbcbc);
+	max-height: calc(43px * 5);
+}
+
+.list::-webkit-scrollbar {
+	width: 5px;
+}
+
+.list::-webkit-scrollbar-track {
+	background: #dcdcdc;
+	opacity: 0.4;
+}
+
+.list::-webkit-scrollbar-thumb {
+	background: #ed36c4;
+	border-radius: 4px;
+}
+
+.list li {
+	padding: 10px 10px 10px 20px;
+	cursor: pointer;
+	border-bottom: 1px solid #dcdcdc;
+}
+
+.error-message {
+	position: absolute;
+	top: calc(100% + 3px);
+}

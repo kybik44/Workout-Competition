@@ -1,0 +1,16 @@
+version: "3.5"
+
+services:
+    next_app:
+        image: "$CI_REGISTRY/$CI_PROJECT_PATH:$CI_COMMIT_REF_SLUG"
+        labels:
+            - traefik.http.routers.${PROJECT_NAME}.rule=Host(`$URL`)
+            - traefik.http.routers.${PROJECT_NAME}.tls=true
+            - traefik.http.routers.${PROJECT_NAME}.tls.certresolver=lets-encrypt
+            - traefik.port=$PORT
+        networks:
+            - web
+
+networks:
+    web:
+        external: true

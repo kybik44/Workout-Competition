@@ -1,0 +1,33 @@
+.burger {
+	width: 90px;
+	height: 78px;
+	border: none;
+	padding: 19px 17px;
+	background-color: #ec37c4;
+	position: fixed;
+	top: 75px;
+	left: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 100;
+}
+
+.burger:hover {
+	background-color: #dc16b0;
+}
+
+@media only screen and (max-width: 890px) {
+	.burger {
+		width: 48px;
+		height: 48px;
+		top: 24px;
+		left: auto;
+		right: 24px;
+		padding: 14px 8px;
+	}
+	.burger svg {
+		width: 32px;
+		height: 20px;
+	}
+}

@@ -1,0 +1,66 @@
+.pagination {
+	display: flex;
+	list-style: none;
+}
+
+.each-li {
+	width: 36px;
+	height: 36px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.page-link {
+	padding: 8px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 24px;
+	color: #000;
+	width: 36px;
+	height: 36px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.active {
+	background-color: #ed36c4;
+	color: #fff !important	;
+}
+
+.arrow {
+	border: none;
+	background-color: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 36px;
+	height: 36px;
+}
+
+.arrow svg path {
+	fill: #000;
+}
+
+.right {
+	transform: rotate(180deg);
+}
+
+.link {
+	width: 36px;
+	height: 36px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.break {
+	width: 36px;
+	height: 36px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	padding: 8px;
+}

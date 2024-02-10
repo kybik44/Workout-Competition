@@ -1,0 +1,103 @@
+.register-wrapper {
+	min-height: 100vh;
+	padding: 70px 0 0;
+	background: url('/images/auth/bg-register.png') top center/cover no-repeat;
+	position: relative;
+}
+
+.auth-wrapper {
+	min-height: 100vh;
+	padding: 70px 0 0;
+	background: url('/images/auth/bg-auth.png') top center/cover no-repeat;
+	position: relative;
+}
+
+.inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.logo {
+	object-fit: contain;
+	align-self: flex-start;
+}
+
+.text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	left: 0;
+	bottom: 30px;
+	z-index: 0;
+	width: 100%;
+	padding: 0 5%;
+}
+
+.title {
+	align-self: flex-start;
+	letter-spacing: -3px;
+	font-family: 'Ampero';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20vw;
+	line-height: 100%;
+	color: transparent;
+	text-transform: uppercase;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 3px #dcdcdc;
+	opacity: 0.6;
+}
+
+.subtitle {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 35px;
+	line-height: 42px;
+	text-transform: uppercase;
+	color: #1c1c1c;
+	opacity: 0.2;
+}
+
+.bottom-logo {
+	object-fit: contain;
+}
+
+@media only screen and (max-width: 768px) {
+	.register-wrapper {
+		padding: 35px 0 0;
+		background: url('/images/auth/bg-register-mobile.png') bottom
+			center/cover no-repeat;
+	}
+
+	.auth-wrapper {
+		padding: 35px 0 0;
+		background: url('/images/auth/bg-auth-mobile.png') top center/cover
+			no-repeat;
+	}
+
+	.logo {
+		width: 140px;
+		height: 55px;
+	}
+
+	.text {
+		bottom: 10px;
+	}
+
+	.title {
+		display: none;
+	}
+
+	.subtitle {
+		font-size: 24px;
+		line-height: 42px;
+		text-align: center;
+	}
+
+	.bottom-logo {
+		width: 185px;
+		height: 76px;
+	}
+}

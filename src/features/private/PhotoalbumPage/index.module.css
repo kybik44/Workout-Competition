@@ -1,0 +1,48 @@
+.photoalbum {
+	padding: 65px 0 70px;
+	background: #fff;
+	position: relative;
+}
+
+.inner {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: column;
+	width: 100%;
+	position: relative;
+}
+
+.title {
+	font-style: normal;
+	font-weight: 200;
+	font-size: 70px;
+	line-height: 72px;
+	color: #090700;
+	margin-bottom: 40px;
+}
+
+.info {
+	max-width: 807px;
+}
+
+.contacts {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	margin-bottom: 40px;
+}
+
+.email {
+	color: #ec37c4;
+}
+
+@media only screen and (max-width: 768px) {
+	.title {
+		margin-bottom: 32px;
+		font-weight: 200;
+		font-size: 54px;
+		line-height: 110%;
+	}
+}

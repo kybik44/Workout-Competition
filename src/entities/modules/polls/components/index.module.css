@@ -1,0 +1,116 @@
+.polls_video_wrap {
+	position: absolute;
+	top: 1vh;
+	width: 80%;
+}
+.polls_polls_wrap {
+	position: absolute;
+	top: 2%;
+	left: 2%;
+	padding: 12px 16px;
+	border-radius: 10px;
+	transition: all 0.3s ease;
+}
+.polls_close_polls {
+	z-index: -1;
+	opacity: 0;
+}
+.polls_show_polls {
+	opacity: 1;
+	z-index: 9;
+	background: #393148;
+	border: 2px solid #393148;
+	box-sizing: border-box;
+	border-radius: 6px;
+	width: 85%;
+	color: #fafafa;
+}
+
+/* UI */
+.poll_title {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 18px;
+	color: #83898d;
+	margin: 0 0 1rem 0;
+	display: block;
+}
+.poll_options_grid {
+	display: flex;
+	flex-flow: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.poll_options_grid button[type='submit']:hover {
+	background-color: #393148;
+	color: white;
+	border: 1px solid #feddb8;
+}
+.poll_options_grid button[type='submit'] {
+	cursor: pointer;
+	background-color: #feddb8;
+	color: #393148;
+	border: none;
+	border-radius: 4px;
+	height: 35px;
+	width: fit-content;
+	padding: 0 22px;
+	margin: 0 0 0 auto;
+	font-weight: bold;
+}
+
+.poll_option {
+	padding: 0.5em 0.5em 0.5em 1.7em;
+	display: block;
+	position: relative;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+}
+.poll_option input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+.poll_option div {
+	position: absolute;
+	right: 0;
+	top: 0;
+	left: 0;
+	bottom: 0;
+}
+.poll_option span {
+	position: relative;
+	z-index: 9;
+}
+.poll_option:hover {
+	color: #feddb8;
+}
+
+.poll_option input ~ div > svg {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.poll_option input ~ div > svg:not(:last-of-type) {
+	display: none;
+}
+.poll_option input:checked ~ div > svg:not(:first-of-type) {
+	display: none;
+}
+.poll_option input:checked ~ div > svg:not(:last-of-type) {
+	display: block;
+}
+.poll_option button {
+	outline: none;
+}
+.close-icon {
+	color: red;
+}
